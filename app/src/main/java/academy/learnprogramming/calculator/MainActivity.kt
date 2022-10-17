@@ -12,7 +12,6 @@ private const val STATE_OPERAND1_STORED = "Operand1_Stored"
 
 class MainActivity : AppCompatActivity() {
 
-    // Variables to hold the operands and type of calculation
     private var operand1: Double? = null
     private var pendingOperation = "="
 
@@ -55,7 +54,7 @@ class MainActivity : AppCompatActivity() {
         buttonMinus.setOnClickListener(opListener)
         buttonPlus.setOnClickListener(opListener)
 
-        buttonNeg.setOnClickListener({ view ->
+        buttonNeg.setOnClickListener {
             val value = newNumber.text.toString()
             if (value.isEmpty()) {
                 newNumber.setText("-")
@@ -65,11 +64,10 @@ class MainActivity : AppCompatActivity() {
                     doubleValue *= -1
                     newNumber.setText(doubleValue.toString())
                 } catch (e: NumberFormatException) {
-                    // newNumber was "-" or ".", so clear it
                     newNumber.setText("")
                 }
             }
-        })
+        }
 
     }
 
