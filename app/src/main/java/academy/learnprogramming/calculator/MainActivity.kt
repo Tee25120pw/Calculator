@@ -23,7 +23,8 @@ class MainActivity : AppCompatActivity() {
             val b = v as Button
             newNumber.append(b.text)
         }
-
+        
+        /* Final Test comment */
 
         button0.setOnClickListener(listener)
         button1.setOnClickListener(listener)
