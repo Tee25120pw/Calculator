@@ -24,8 +24,6 @@ class MainActivity : AppCompatActivity() {
             newNumber.append(b.text)
         }
 
-        /* Test */
-
         button0.setOnClickListener(listener)
         button1.setOnClickListener(listener)
         button2.setOnClickListener(listener)
