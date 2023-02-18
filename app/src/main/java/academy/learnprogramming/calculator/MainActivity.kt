@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
             newNumber.append(b.text)
         }
         
-        // update from master branch
+        // update from main branch
 
         button0.setOnClickListener(listener)
         button1.setOnClickListener(listener)
