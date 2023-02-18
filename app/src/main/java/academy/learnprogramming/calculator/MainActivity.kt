@@ -24,7 +24,6 @@ class MainActivity : AppCompatActivity() {
             newNumber.append(b.text)
         }
 
-        /* Test */
 
         button0.setOnClickListener(listener)
         button1.setOnClickListener(listener)
@@ -96,7 +95,6 @@ class MainActivity : AppCompatActivity() {
         result.setText(operand1.toString())
         newNumber.setText("")
     }
-
     override fun onSaveInstanceState(outState: Bundle) {
         super.onSaveInstanceState(outState)
         if (operand1 != null) {
