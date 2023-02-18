@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
             newNumber.append(b.text)
         }
         
-        // delete from develop
+        // update from feature
 
         button0.setOnClickListener(listener)
         button1.setOnClickListener(listener)
